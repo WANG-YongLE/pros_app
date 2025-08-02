@@ -24,7 +24,32 @@ rs-enumerate-devices
 ![alt text](image.png)
 透過這個指令可以看到相機編號還有usb
 ## docker-compose_mutiple_camera_realsense
-...
+根據所查詢到的相機編號以及usb填入
+![alt text](image-1.png)
+## 開啟相機
+```
+git checkout develop
+sudo ./camera_mutiple_realsense.sh
+```
+然後會看到下面畫面
+![alt text](image-2.png)
+就表示成功了
+## foxglove操作說明
+foxglove不能幹麻只是協助觀看畫面而已
+### 下載
+
+[下載連結](https://foxglove.dev/download)
+點開
+![alt text](image-4.png)
+看port
+```
+lsof -i :9090
+
+```
+
+![alt text](image-6.png)
+![alt text](image-7.png)
+然後就看到畫面了
 ## utils.sh
 這個 Bash 腳本的目的是 **自動啟動一組 Docker Compose 檔案並監聽它們的 log，並在你按下 Ctrl+C 時自動清理（`docker-compose down`）所有服務**。
 
