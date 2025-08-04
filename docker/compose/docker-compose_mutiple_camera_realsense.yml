@@ -18,7 +18,7 @@ services:
     command: >
       ros2 launch realsense2_camera rs_launch.py
       camera_namespace:=real_sense_1
-      serial_no:="\"419122270116\""
+      serial_no:="\"239222302418\""
       camera_name:=D455
       usb_port_id:=2-2.2.1.1
       rgb_camera.color_profile:=1280x720x15
@@ -44,7 +44,7 @@ services:
     command: >
       ros2 launch realsense2_camera rs_launch.py
       camera_namespace:=real_sense_2
-      serial_no:="\"239222302418\""
+      serial_no:="\"419122270116\""
       camera_name:=D405
       usb_port_id:=2-2.3.1.1
 
